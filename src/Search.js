@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 export default function Search() {
   let [city, setCity] = useState("");
 
@@ -13,7 +13,7 @@ export default function Search() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="search" onChange={updateCity} />
+      <input type="search" onChange={updateCity} />s
       <input type="submit" value="Search" />
       <br />
       <h2>It is currently 20°C in {city}.</h2>
